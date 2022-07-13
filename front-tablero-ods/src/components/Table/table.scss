@@ -1,0 +1,87 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.table__container {
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  border-radius: 0 0 10px 10px;
+  overflow-x: hidden;
+
+  @include breakpoint(md) {
+    overflow-x: scroll;
+  }
+
+  &-title {
+    background-color: $item-hover;
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+.table__container-table {
+  border-collapse: collapse;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+}
+  
+th, td {
+  text-align: left;
+  font-size: 12px;
+  padding: 12px;
+}
+  
+th {
+  background-color: $color-gray;
+  color: $texto-color-gray;
+  text-transform: uppercase;
+}
+
+.actions-title {
+  text-align: center;
+}
+
+.actions-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 1.2rem;
+
+
+  &__icons {
+    display: flex;
+    gap: 10px;
+
+    button {
+      border: none;
+      font-size: 2.5rem;
+      background-color: aqua;
+      display: flex;
+      padding: 4px;
+      border-radius: 25px;
+    }
+  } 
+
+  &__input {
+
+    input {
+      outline: 0;
+      border-color: $color-gray;
+      padding: 2px 5px;
+      text-align: center;
+      border-radius: 5px;
+    }
+  }
+  
+}

@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+
+.footer {
+    height: 4rem;
+
+    &__container {
+        &-copy {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            
+            @include breakpoint(lg) {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &-name {
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+            @include breakpoint(lg) {
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

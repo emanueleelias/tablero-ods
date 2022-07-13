@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+.card {
+    margin-top: 60px;
+    height: 156px;
+    width: 100%;
+    background-color: $item-hover;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    border-radius: 10px;
+
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h4 {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            color: $texto-color-gray;
+        }
+        
+        span {
+            font-size: 3rem;
+            font-weight: 600;
+        }
+    }
+
+    &__head-icon {
+        svg {
+            padding: 10px;
+     
+            border-radius: 50px;
+            font-size: 4rem;
+            background-color: aqua;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+        }
+    }
+
+    &__footer {
+        margin-top: auto;
+        color: $texto-color-gray;
+    }
+}
